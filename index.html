@@ -21,7 +21,7 @@
             <div class="col-sm-8 col-sm-offset-2">
                 <br>
                 <!-- First panel is for handling the search parameters -->
-                <div class="panel panel-primary">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title"><strong><i class="searchList"></i>   Search Parameters</strong></h3>
                     </div>
@@ -30,17 +30,17 @@
                         <form role="form">
                             <!-- Here we create the text box for capturing the search term-->
                             <div class="form-group">
-                                <label for="search">Search Term:</label>
+                                <label for="search">Keywords</label>
                                 <input type="text" class="form-control" id="searchTerm">
                             </div>
                             <!-- Here we capture the number of records that the user wants to retrieve  -->
                             <div class="form-group">
-                                <label for="pwd">Number of Records to Retrieve:</label>
+                                <label for="pwd">Number of Articles</label>
                                 <select class="form-control" id="recordNumber">
                                     <option value=1>1</option>
                                     <!-- Setting the option for 5 as default -->
-                                    <option value=5 selected>5</option>
-                                    <option value=10>10</option>
+                                    <option value=10 selected>10</option>
+                                    <option value=25>25</option>
                                 </select>
                             </div>
                             <!-- Here we capture the Start Year Parameter-->
@@ -65,7 +65,7 @@
             <div class="col-sm-8 col-sm-offset-2">
                 <br>
                 <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
-                <div class="panel panel-primary">
+                <div class="panel panel-default">
                     <!-- Panel Heading for the retrieved articles box -->
                     <div class="panel-heading">
                         <h3 class="panel-title"><strong><i class=""></i>  Articles</strong></h3>
