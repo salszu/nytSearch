@@ -20,42 +20,38 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <br>
-                <!-- First panel is for handling the search parameters -->
+                <!-- search -->
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><strong><i class="searchList"></i>   Search Parameters</strong></h3>
+                        <h3 class="panel-title text-center"><strong><i class="searchList"></i>   Search Parameters</strong></h3>
                     </div>
                     <div class="panel-body">
-                        <!-- Here we create an HTML Form for handling the inputs-->
                         <form role="form">
-                            <!-- Here we create the text box for capturing the search term-->
+                            <!-- search term -->
                             <div class="form-group">
                                 <label for="search">Keywords</label>
                                 <input type="text" class="form-control" id="searchTerm">
                             </div>
-                            <!-- Here we capture the number of records that the user wants to retrieve  -->
                             <div class="form-group">
                                 <label for="pwd">Number of Articles</label>
                                 <select class="form-control" id="recordNumber">
                                     <option value=1>1</option>
-                                    <!-- Setting the option for 5 as default -->
                                     <option value=10 selected>10</option>
                                     <option value=25>25</option>
                                 </select>
                             </div>
-                            <!-- Here we capture the Start Year Parameter-->
                             <div class="form-group">
                                 <label for="startYear">Start Year (Optional):</label>
                                 <input type="text" class="form-control" id="startYear">
                             </div>
-                            <!-- Here we capture the End Year Parameter -->
                             <div class="form-group">
                                 <label for="endYear">End Year (Optional):</label>
                                 <input type="text" class="form-control" id="endYear">
                             </div>
-                            <!-- Here we have our final submit button -->
-                            <button type="submit" class="btn btn-primary" id="runSearch"><i class=""></i> Search</button>
-                            <button type="button" class="btn btn-danger" id="clearAll"><i class=""></i> Clear Results</button>
+                            <div class="text-center">
+	                            <button type="submit" class="btn btn-primary" id="runSearch"><i class=""></i> Search</button>
+	                            <button type="button" class="btn btn-danger" id="clearAll"><i class=""></i> Clear Results</button>
+	                        </div>
                         </form>
                     </div>
                 </div>
@@ -64,13 +60,10 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <br>
-                <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
                 <div class="panel panel-default">
-                    <!-- Panel Heading for the retrieved articles box -->
                     <div class="panel-heading">
-                        <h3 class="panel-title"><strong><i class=""></i>  Articles</strong></h3>
+                        <h3 class="panel-title text-center"><strong><i class=""></i>  Articles</strong></h3>
                     </div>
-                    <!-- This main panel will hold each of the resulting articles -->
                     <div class="panel-body" id="showArticles">
                     </div>
                 </div>
